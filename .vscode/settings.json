@@ -31,7 +31,6 @@
   "[javascriptreact]": {
     "editor.defaultFormatter": "dbaeumer.vscode-eslint"
   },
-  "stylelint.validate": ["css"],
   "auto-close-tag.activationOnLanguage": [
     "xml",
     "javascriptreact",
