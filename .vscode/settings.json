@@ -1,47 +1,32 @@
 {
+  "jest.runMode": "on-demand",
   "typescript.validate.enable": true,
-  "eslint.enable": true,
-  "eslint.workingDirectories": [
-    { "pattern": "./apps/*/" },
-    { "pattern": "./packages/*/" }
-  ],
-  "eslint.validate": [
-    "javascript",
-    "javascriptreact",
-    "typescript",
-    "typescriptreact"
-  ],
-
+  "eslint.enable": false,
+  "eslint.validate": ["typescript", "typescriptreact", "javascript", "javascriptreact"],
+  "eslint.workingDirectories": [{ "pattern": "./apps/*/" }, { "pattern": "./packages/*/" }],
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "prettier.configPath": ".prettierrc",
-  // "editor.formatOnSave": true,
-  // "editor.codeActionsOnSave": {
-  //   "source.fixAll.eslint": "explicit",
-  //   "source.organizeImports": "explicit"
-  // },
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": "explicit"
+  },
   "[typescript]": {
-    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[typescriptreact]": {
-    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[javascript]": {
-    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[javascriptreact]": {
-    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "auto-close-tag.activationOnLanguage": [
-    "xml",
-    "javascriptreact",
-    "typescriptreact",
-    "plaintext",
-    "markdown",
-    "HTML (Eex)"
-  ],
-  "javascript.preferences.importModuleSpecifier": "non-relative",
-  "typescript.preferences.importModuleSpecifier": "non-relative",
-
-  "javascript.preferences.quoteStyle": "single",
-  "typescript.preferences.quoteStyle": "single"
+  "files.associations": {
+    "*.mjs": "javascript"
+  },
+  "javascript.validate.enable": true,
+  "typescript.preferences.importModuleSpecifier": "relative",
+  "javascript.preferences.importModuleSpecifier": "relative",
+  "typescript.preferences.quoteStyle": "single",
+  "commentTranslate.multiLineMerge": true
 }
