@@ -1,4 +1,8 @@
-packages/autocast-api/*
+packages/*
+!packages/.gitkeep
+apps/*
+!apps/.gitkeep
+
 
 stats.html
 
