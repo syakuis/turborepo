@@ -7,4 +7,4 @@
 - [x] Pnpm & ESM Type use(module)
 - [x] TypeScript
 - [x] Jest
-- [] ESList
+- [ ] ESList
