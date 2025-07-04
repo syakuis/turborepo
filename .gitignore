@@ -1,9 +1,3 @@
-packages/*
-!packages/.gitkeep
-apps/*
-!apps/.gitkeep
-
-
 stats.html
 
 # Logs
