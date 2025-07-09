@@ -25,7 +25,7 @@ const generateModuleNameMapper = () => {
   }
 
   // 모노레포 패키지 매핑 추가
-  mapper['^@autocast/(.*)$'] = '<rootDir>../../packages/autocast-$1/src';
+  // mapper['^@autocast/(.*)$'] = '<rootDir>../../packages/autocast-$1/src';
 
   // .js 확장자 해결을 위한 추가 매핑
   mapper['^(.+)\\.js$'] = '$1';
@@ -53,9 +53,10 @@ export default {
   transform: {
     '^.+\\.ts$': ['ts-jest', tsJestOptions],
   },
-  transformIgnorePatterns: [
-    'node_modules/(?!(@autocast)/)'
-  ],
+  // 모노레포 패키지 매핑 추가
+  // transformIgnorePatterns: [
+  //   'node_modules/(?!(@autocast)/)'
+  // ],
   moduleNameMapper: generateModuleNameMapper(),
   moduleFileExtensions: ['js', 'mjs', 'ts', 'json'],
   collectCoverageFrom: ['src/**/*.ts', '!src/**/*.d.ts'],
