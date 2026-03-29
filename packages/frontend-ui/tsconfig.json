@@ -1,0 +1,20 @@
+{
+  "extends": ["../../tsconfig.json"],
+  "compilerOptions": {
+    "outDir": "./dist",
+    "rootDir": "src",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "target": "ESNext",
+    "lib": ["ESNext", "DOM.Iterable", "DOM"],
+    "importHelpers": true,
+    "allowJs": true,
+    "incremental": false,
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": ".",
+    "jsx": "react-jsx",
+    "types": ["@testing-library/jest-dom"]
+  },
+  "include": ["src", "vite.config.ts", "__tests__/App.test.tsx"],
+  "exclude": ["node_modules", "dist"]
+}

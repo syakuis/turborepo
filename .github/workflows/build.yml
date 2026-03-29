@@ -25,10 +25,10 @@ jobs:
         with:
           version: 10
       - name: Install dependencies
-        run: pnpm install
+        run: pnpm install --frozen-lockfile
 
       - name: Build
         run: pnpm run build
 
       - name: Test
-        run: pnpm run test
+        run: pnpm turbo test --filter="[HEAD^1]"

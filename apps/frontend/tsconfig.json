@@ -1,0 +1,19 @@
+{
+  "extends": ["../../tsconfig.json"],
+  "compilerOptions": {
+    "outDir": "./dist",
+    "rootDir": "src",
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "target": "ESNext",
+    "lib": ["ESNext", "DOM.Iterable", "DOM"],
+    "importHelpers": true,
+    "allowJs": true,
+    "incremental": false,
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": ".",
+    "jsx": "react-jsx"
+  },
+  "include": ["src", "__tests__/App.test.tsx"],
+  "exclude": ["node_modules", "dist"]
+}

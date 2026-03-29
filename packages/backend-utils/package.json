@@ -1,0 +1,58 @@
+{
+  "name": "backend-utils",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json && tsc-alias -p tsconfig.build.json",
+    "test": "jest --passWithNoTests"
+  },
+  "type": "module",
+  "main": "dist/index.js",
+  "module": "src/index.ts",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/**/*"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "browser": "./dist/index.browser.js",
+      "node": "./dist/index.js",
+      "default": "./dist/index.browser.js"
+    },
+    "./constants": {
+      "types": "./dist/constant.d.ts",
+      "import": "./dist/constant.js",
+      "default": "./dist/constant.js"
+    },
+    "./types": {
+      "types": "./dist/types/index.d.ts",
+      "import": "./dist/types/index.js",
+      "default": "./dist/types/index.js"
+    },
+    "./core": {
+      "types": "./dist/core/index.d.ts",
+      "import": "./dist/core/index.js",
+      "default": "./dist/core/index.js"
+    }
+  },
+  "typesVersions": {
+    "*": {
+      "types": [
+        "./dist/types/index.d.ts"
+      ],
+      "constants": [
+        "./dist/constant.d.ts"
+      ],
+      "core": [
+        "./dist/core/index.d.ts"
+      ]
+    }
+  },
+  "dependencies": {
+
+  },
+  "devDependencies": {
+
+  }
+}

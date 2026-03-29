@@ -12,7 +12,10 @@
       "persistent": true
     },
     "msw:init": {},
-    "lint": {},
+    "lint": {
+      "inputs": ["$TURBO_DEFAULT$", ".env*"],
+      "outputs": []
+    },
     "test": {},
     "test:watch": {
       "cache": false,
